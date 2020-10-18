@@ -19,5 +19,15 @@
 
     $favorite=$gameArray[6][species];
 
+    echo("<br>");echo("<br>");
+    foreach($gameArray as $k=>$v){
+        foreach($v as $k=>$v){
+            if ($k=="species"){
+                echo("$k => $v <br>");
+                break;
+            }
+        }
+    }
+
 
 ?>

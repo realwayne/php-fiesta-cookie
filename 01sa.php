@@ -17,16 +17,12 @@
 
     echo(count($gameArray));
 
-    $favorite=$gameArray[6][species];
+    $favorite=$gameArray[6]["species"];
 
     echo("<br>");echo("<br>");
-    foreach($gameArray as $k=>$v){
-        foreach($v as $k=>$v){
-            if ($k=="species"){
-                echo("$k => $v <br>");
-                break;
-            }
-        }
+    foreach($gameArray as $arr){
+        $name=$arr["species"];
+        echo("$name<br>");
     }
 
 
